@@ -4,7 +4,7 @@
   /*===== Colores =====*/
 --Green-color:	#008000;
 --Hunter-Green-color:	#355E3B;
---Jade-green-color:	#00A36C;
+--Jade-green-color:	#00ff84;
 --Jungle-Green-color:	#2AAA8A;
   --dark-yellow-color: #ffae00;
   --black-color: #000000;
@@ -41,8 +41,8 @@
     padding: 0;
     margin: 0;
     direction: ltr;
-    background-color: var(--background-color);
-    color: var(--white-color);
+    /* background-color: var(--background-color); */
+    /* color: var(--white-color); */
   }
 ul {
     margin: 0;
@@ -67,12 +67,12 @@ ul {
   }
   .header {
     width: 100%;
-    height: 2rem;
+    height: 4rem;
     position: fixed;
     top: 0;
     left: 0;
     padding: 0 1.5rem;
-    background-color: var(--dark-blue-color);
+    background-color: #14151B;
     z-index: var(--z-fixed);
     display: flex;
     justify-content: space-between;
@@ -86,7 +86,7 @@ ul {
     color: var(--white-color);
     cursor: pointer;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .nav {
       position: fixed;
       top: 0;
@@ -116,7 +116,7 @@ ul {
     cursor: pointer;
   }
   #nav-list{
-    background-color: var(--Jade-green-color);
+    background-color: var(--black-color);
     border-radius: 10rem;
   }
   .img1 {
@@ -210,11 +210,11 @@ ul {
     }
     li {
       padding: .5rem .8rem;
-      border-radius: .25rem;
+      border-radius: 50px;
     }
     li:hover {
-      background-color: var(--dark-yellow-color);
       color: var(--white-color);
+      background-color: #08c0c0;
     }
     .active {
       color: var(--white-color);
@@ -231,9 +231,9 @@ ul {
     }
   }
   .home {
-    height: 80vh;
+    height: 70vh;
     display: flex;
-    margin-top: 3rem;
+    margin-top: 4rem;
     justify-content: center;
     align-items: center;
     color: var(--white-color);
@@ -256,15 +256,24 @@ ul {
   }
   
   .title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    justify-content:center;
+    margin-bottom: 0;
   }
   
   .heading {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--white-color);
+  }
+  p{
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: 400;
   }
   
   button {
@@ -277,5 +286,108 @@ ul {
   }
   
   button:hover {
-    background-color: #444;
+    background-color: #02b4b4;
   }
+  .About{
+    padding: 3rem 0;
+  }
+  .section-title{
+    align-self: center;
+    color: #02b4b4;
+    border: 2px solid black;
+    padding: 2px 30px 3px 16px;
+    border-style: solid;
+    border-radius: 50px 50px 50px 50px;
+    display: inline-block;
+}
+  .about-container{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
+    justify-content: center;
+    z-index: 1;
+  }  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+   img {
+    width: 100%;
+    height: 100%; /* Set height to 100% to make it flexible */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    z-index: 1;
+  }
+  .short {
+    grid-row: span 1;
+  }
+  
+  .tall {
+    grid-row: span 2;
+  }
+  
+  .taller {
+    grid-row: span 3;
+  }
+  
+  .tallest {
+    grid-row: span 3;
+    grid-row: span 2;
+  }
+  .about-content img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+  }
+.about-container .short,
+.about-container .tall,
+.about-container .taller,
+.about-container .tallest {
+    position: relative;
+}
+
+.about-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 1;
+    z-index: 1;
+}
+
+.text-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-overlay p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}

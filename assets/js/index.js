@@ -18,3 +18,10 @@ toggleButton.addEventListener('click', () => {
       navMenu.classList.remove('show');
       }
       navLink.forEach(n => n.addEventListener('click', linkAction));
+      // video button
+      const playPauseBtn = document.querySelector('.play-pause-btn');
+
+      playPauseBtn.addEventListener('click', () => {
+        playPauseBtn.classList.toggle('playing');
+        // Add your video play/pause logic here
+      });
