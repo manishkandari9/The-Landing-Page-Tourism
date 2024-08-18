@@ -135,6 +135,8 @@ ul {
     width: 46px;
   }
   .name-m {
+    font-size: 2rem;
+    font-weight: 500;
     display: block;
     color: var(--white-color);
   }
@@ -295,7 +297,7 @@ ul {
   .section-title{
     align-self: center;
     color: #02b4b4;
-    border: 2px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     padding: 2px 30px 3px 30px;
     border-style: solid;
     border-radius: 50px 50px 50px 50px;
@@ -384,7 +386,7 @@ ul {
     color: #fff;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     text-align: center;
     padding: 7rem 0;
@@ -395,12 +397,31 @@ ul {
 
 .text-overlay h2 {
     font-size: 24px;
-    color: #000000;
-    /* margin-bottom: 10px; */
+    color: #4cf703;
 }
 
 .text-overlay p {
     font-size: 18px;
     color: #000000;
-    /* margin-bottom: 20px; */
+}
+.risi .text-overlay  h2{
+  margin-top: 11rem;
+}
+.bhoot1 .text-overlay  h2{
+  margin-top: 12rem;
+}
+.neel .text-overlay  h2{
+  margin-top: 12rem;
+}
+.risi .text-overlay  h2{
+  margin-top: 12rem;
+}
+.risi1 .text-overlay  h2{
+  margin-top: 13rem;
+}
+.raft .text-overlay  h2{
+  margin-top: 8rem;
+}
+.bhoot .text-overlay  h2{
+  margin-top: 12rem;
 }
