@@ -258,10 +258,17 @@ ul {
   }
   
   .title {
-    font-size: 1.5rem;
-    font-weight: 400;
-    justify-content:center;
-    margin-bottom: 0;
+    font-size: 1.6rem;
+    align-self: center;
+    color: #02b4b4;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 2px 30px 3px 30px;
+    align-items: center;
+    text-align: center;
+    border-style: solid;
+    border-radius: 50px 50px 50px 50px;
+    display: inline-block;
+    /* margin-left: 14rem; */
   }
   
   .heading {
@@ -273,7 +280,7 @@ ul {
     color: var(--white-color);
   }
   p{
-    margin-top: 0;
+    margin-top: ;
     font-size: 1rem;
     font-weight: 400;
   }
@@ -281,10 +288,14 @@ ul {
   button {
     background-color: #333;
     color: #fff;
-    border: none;
+    border: 1px solid;
+    border-radius: 20px;
     padding: 10px 20px;
     font-size: 18px;
+    margin-top: 1rem;
     cursor: pointer;
+    transition: all ease-in;
+    background-color: #02b4b4;
   }
   
   button:hover {
@@ -374,7 +385,7 @@ ul {
 .about-container img {
     display: block;
     width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 
 .text-overlay {
@@ -411,7 +422,7 @@ ul {
   margin-top: 12rem;
 }
 .neel .text-overlay  h2{
-  margin-top: 12rem;
+  margin-top: 20rem;
 }
 .risi .text-overlay  h2{
   margin-top: 12rem;
