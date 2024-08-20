@@ -280,7 +280,7 @@ ul {
     color: var(--white-color);
   }
   p{
-    margin-top: ;
+    /* margin-top: ; */
     font-size: 1rem;
     font-weight: 400;
   }
@@ -301,7 +301,7 @@ ul {
   button:hover {
     background-color: #02b4b4;
   }
-  .About{
+  .Explore{
     padding: 3rem 0;
     background-color:  #14151B;;
   }
@@ -322,7 +322,7 @@ ul {
   color: white;
   margin: 0;
 }
-  .about-container{
+  .explore-container{
     max-width: 1024px;
     margin: 0 auto;
     display: grid;
@@ -375,14 +375,14 @@ ul {
     border-radius: 10px 10px 0 0;
     position: relative;
   }
-.about-container .short,
-.about-container .tall,
-.about-container .taller,
-.about-container .tallest {
+.explore-container .short,
+.explore-container .tall,
+.explore-container .taller,
+.explore-container .tallest {
     position: relative;
 }
 
-.about-container img {
+.explore-container img {
     display: block;
     width: 100%;
     /* height: auto; */
@@ -435,4 +435,217 @@ ul {
 }
 .bhoot .text-overlay  h2{
   margin-top: 12rem;
+}
+/* Reset some default styles */
+/* body, h1, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color for the entire page *
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Container to center content and add padding *
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+#about {
+  background: linear-gradient(135deg, #ffffff 0%, #e2e2e2 100%);
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Heading style *
+#about h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+
+#about p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+  #about h1 {
+      font-size: 2em;
+  }
+  
+  #about p {
+      font-size: 1em;
+  }
+} */
+/* Reset some default styles */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color for the entire page */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Container to center content and add padding */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Style for the About section */
+#about {
+  background: linear-gradient(135deg, #ffffff 0%, #e2e2e2 100%);
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Flexbox for content layout */
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+}
+
+/* Style for the About text */
+.about-text {
+  flex: 1;
+  max-width: 500px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Heading style */
+#about h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Paragraph style */
+#about p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin: 0 0 10px;
+}
+
+/* Style for the images container */
+.about-images {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  max-width: 800px;
+  position: relative;
+}
+
+/* Style for individual images */
+.about-images img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Left image positioning */
+.image-left {
+  left: 0;
+  animation: scrollLeft 5s linear infinite;
+}
+
+/* Right image positioning */
+.image-right {
+  right: 0;
+  animation: scrollRight 5s linear infinite;
+}
+
+/* Keyframes for smooth scrolling animation */
+@keyframes scrollLeft {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #about h1 {
+      font-size: 2em;
+  }
+  
+  #about p {
+      font-size: 1em;
+  }
+
+  .about-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about-images {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .about-images img {
+      position: relative;
+      transform: none;
+  }
 }
