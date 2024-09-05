@@ -41,7 +41,9 @@
     padding: 0;
     margin: 0;
     direction: ltr;
-    /* background-color: var(--background-color); */
+    background: linear-gradient(to right, #000000, #003340);
+
+
     /* color: var(--white-color); */
   }
 ul {
@@ -303,7 +305,7 @@ ul {
   }
   .Explore{
     padding: 3rem 0;
-    background-color:  #14151B;;
+    /* background-color:  #14151B;; */
   }
   .section-title{
     align-self: center;
@@ -341,7 +343,7 @@ ul {
     justify-content: center;
     padding: 20px;
     border-radius: 10px;
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
    img {
@@ -500,8 +502,8 @@ body, h1, p {
 /* Set a background color for the entire page */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f0f2f5;
-  color: #333;
+  /* background-color: #f0f2f5; */
+  /* color: #333; */
 }
 
 /* Container to center content and add padding */
@@ -512,7 +514,7 @@ body {
 
 /* Style for the About section */
 #about {
-  background: linear-gradient(135deg, #ffffff 0%, #e2e2e2 100%);
+  /* background: linear-gradient(135deg, #ffffff 0%, #e2e2e2 100%); */
   padding: 50px 0;
   position: relative;
   overflow: hidden;
@@ -540,7 +542,7 @@ body {
 #about h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 2.5em;
-  color: #2c3e50;
+  color: #ffffff;
   margin-bottom: 20px;
   animation: slideIn 1s ease-in-out;
 }
@@ -549,7 +551,7 @@ body {
 #about p {
   font-size: 1.1em;
   line-height: 1.6;
-  color: #555;
+  color: #ffffff;
   margin: 0 0 10px;
 }
 
